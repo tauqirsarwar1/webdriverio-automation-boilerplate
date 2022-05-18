@@ -1,0 +1,31 @@
+{
+  "homePage": {
+    "signInButton": "//a/div/strong[contains(text(),'Sign In')]"
+  },
+  "loginPage": {
+    "userEmail": "//input[@name='email']",
+    "userPassword": "//input[@name='password']",
+    "signInButton": "//button[contains(text(),'Sign in')]",
+    "welcomeMessage": "//p[contains(text(),'Set up an account')]",
+    "loginFormScreenshot": "//form"
+  },
+  "SignUpPage": {
+    "signUpLink": "//p[contains(text(),'Sign up')]",
+    "agreeToTerms": "//label[@for='isAgreeToTerms']",
+    "boxChecked": ".checked",
+    "signUpEmailButton": "//button[contains(text(),'Sign up with email')]",
+    "formEmail": "#email",
+    "formFirstName": "#firstName",
+    "formLastName": "#lastName",
+    "formPassword": "#password",
+    "formConfirmPassword": "#confirmPassword",
+    "sigUpButton": "//button[contains(text(),'Sign up')]",
+    "signUpConfirmation": "//p[contains(text(),'Thanks for choosing Select Star')]",
+    "signUpGoogleButton": "//span[contains(text(),'Sign up')]",
+    "gmailID": "//input[@type='email']",
+    "gmailPassword": "//input[@type='password']",
+    "gmailNextButton": "//span[contains(text(),'Next')]",
+    "gmailTryFailed": "//div[contains(text(),'Please use your work email.')]",
+    "emailExistError": "//div[contains(text(),'User with this email address already exists')]"
+  }
+}
