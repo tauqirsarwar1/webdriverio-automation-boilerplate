@@ -157,34 +157,10 @@ const defaultConfig = {
     }]],
 
     bsCapabilities: [{
-
-        // maxInstances can get overwritten per capability. So if you have an in-house Selenium
-        // grid with only 5 firefox instances available you can make sure that not more than
-        // 5 instances get started at a time.
         browserName: 'chrome',
-        maxInstances: 1,
-        'bstack:options': {
-            os: 'Windows',
-            build: 'Main Build',
-            name: 'ABV2',
-            idleTimeout: 400,
-            osVersion: '10',
-            resolution: '1366x768',
-            projectName: 'selectstar-e2e-test',
-            consoleLogs: 'verbose',
-            browserVersion: '101.0.4951.67',
-            local: true,
-            debug: true,
-            networkLogs: true,
-            localIdentifier: 'e2e-tests',
-        },
-        //
-        // }
-        // If outputDir is provided WebdriverIO can capture driver session logs
-        // it is possible to configure which logTypes to include/exclude.
-        // it is possible to configure which logTypes to include/exclude.
-        // excludeDriverLogs: ['*'], // pass '*' to exclude all driver session logs
-        // excludeDriverLogs: ['bugreport', 'server'],
+        browser_version: 'latest',
+        os: 'Windows',
+        os_version: '10',
     }],
 };
 module.exports = defaultConfig;

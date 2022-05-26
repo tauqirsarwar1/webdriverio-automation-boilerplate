@@ -112,9 +112,8 @@ export const config: WebdriverIO.Config = {
     // commands. Instead, they hook themselves up into the test process.
     services: [
         defaultConfig.imageService,
-        ['browserstack', {
+        ['@browserstack/wdio-browserstack-service', {
             browserstackLocal: true,
-            forcedStop: true,
         }]],
     //
     // Framework you want to run your specs with.
