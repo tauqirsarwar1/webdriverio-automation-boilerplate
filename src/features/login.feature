@@ -3,7 +3,7 @@ Feature: Select Star Login Feature
     Background: Select Star Home Screen
         Given I open the site "/"
         Then  I expect the url to contain "selectstar.com"
-        And the title is "Data Management Tool | Organize, Find & Maintain Your Data | Select Star"
+        And the title is "Automated Data Discovery | Find & Understand your Data | Select Star"
         When I click on the button "homePage.signInButton"
         Then I expect that element "loginPage.userEmail" becomes displayed
 
