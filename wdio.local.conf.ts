@@ -96,11 +96,11 @@ export const config: WebdriverIO.Config = {
     baseUrl: defaultConfig.baseUrl,
     //
     // Default timeout for all waitFor* commands.
-    waitforTimeout: 120000,
+    waitforTimeout: 600000,
     //
     // Default timeout in milliseconds for request
     // if browser driver or grid doesn't send response
-    connectionRetryTimeout: 120000,
+    connectionRetryTimeout: 600000,
     //
     // Default request retries count
     connectionRetryCount: 3,

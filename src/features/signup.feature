@@ -2,13 +2,12 @@ Feature: Select Star Sign Up Feature
 
     Background: Select Star Home Screen
         Given I open the site "/"
-        Then  I expect the url to contain "selectstar.com"
-        And the title is "Data Management Tool | Organize, Find & Maintain Your Data | Select Star"
-        When I click on the button "homePage.signInButton"
+        Then  I expect the url to contain "staging.selectstar.com"
+        And the title is "Login | Select Star"
         Then I expect that element "SignUpPage.signUpLink" becomes displayed
-        And  I expect the url to contain "app.selectstar.com/login"
+        And  I expect the url to contain "selectstar.com/login"
         When I click on the button "SignUpPage.signUpLink"
-        Then  I expect the url to contain "app.selectstar.com/signup"
+        Then  I expect the url to contain "staging.selectstar.com/signup"
         When I click on the element "SignUpPage.agreeToTerms"
         Then I expect that element "SignUpPage.boxChecked" becomes displayed
 
@@ -17,7 +16,7 @@ Feature: Select Star Sign Up Feature
     Scenario: User sign up by new email ID
         When I click on the button "SignUpPage.signUpEmailButton"
         # Enter new email ID
-        And I add "test127@maintech.com" to the inputfield "SignUpPage.formEmail"
+        And I add "test200@maintech.com" to the inputfield "SignUpPage.formEmail"
         And I add "DEV" to the inputfield "SignUpPage.formFirstName"
         And I add "test1" to the inputfield "SignUpPage.formLastName"
         And I add "DEVtest1@yup.com" to the inputfield "SignUpPage.formPassword"

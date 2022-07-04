@@ -51,7 +51,7 @@ const defaultConfig = {
         // excludeDriverLogs: ['*'], // pass '*' to exclude all driver session logs
         // excludeDriverLogs: ['bugreport', 'server'],
     }],
-    baseUrl: 'https://www.selectstar.com',
+    baseUrl: 'https://staging.selectstar.com',
     imageService: ['image-comparison',
         // The options
         {

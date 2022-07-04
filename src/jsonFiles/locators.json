@@ -6,9 +6,13 @@
     "userEmail": "//input[@name='email']",
     "userPassword": "//input[@name='password']",
     "signInButton": "//button[contains(text(),'Sign in')]",
-    "welcomeMessage": "//p[contains(text(),'Set up an account')]",
+    "welcomeScreen": "//input[@placeholder='Search for datasets, dashboards, or users']",
     "loginFormScreenshot": "//form",
-    "loginInvalid": "//div[contains(text(),'No active account found with the given credentials')]"
+    "loginInvalid": "//div[@type='error']",
+    "googleSignInButton": "//div[2]/button[1]/span",
+    "tryOtherMethod": "//button/span[contains(text(),'Try another way')]",
+    "gmailCode": "//div[contains(text(),'Enter one of your 8-digit backup codes')]"
+
   },
   "SignUpPage": {
     "signUpLink": "//p[contains(text(),'Sign up')]",
@@ -24,6 +28,7 @@
     "signUpConfirmation": "//p[contains(text(),'Thanks for choosing Select Star')]",
     "signUpGoogleButton": "//span[contains(text(),'Sign up')]",
     "gmailID": "//input[@type='email']",
+    "backUpCode": "//input[@type='tel']",
     "gmailPassword": "//input[@type='password']",
     "gmailNextButton": "//span[contains(text(),'Next')]",
     "gmailTryFailed": "//div[contains(text(),'Please use your work email.')]",
