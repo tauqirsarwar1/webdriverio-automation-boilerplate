@@ -192,9 +192,7 @@ export const hooks = {
     afterStep: async ({ uri, feature, step } : any, context:any, {
         error, result, duration, passed,
     } : any) => {
-        if (error) {
-            await browser.takeScreenshot();
-        }
+        await browser.takeScreenshot();
     },
 
     afterScenario: async (scenario: any) => {

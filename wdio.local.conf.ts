@@ -113,9 +113,6 @@ export const config: WebdriverIO.Config = {
         defaultConfig.imageService, ['selenium-standalone', {
             logPath: './logs',
         }],
-        ['browserstack', {
-            browserstackLocal: false,
-        }],
     ],
     //
     // Framework you want to run your specs with.
